@@ -128,8 +128,8 @@ function getStreamSources() {
     }
 
     if (key === "tw") {
-      sources.push(`https://player.twitch.tv/?channel=${value}&parent=cs5v5.multiwatch.lt`);
-      ciframe.src = `https://www.twitch.tv/embed/${value}/chat?darkpopout&parent=cs5v5.multiwatch.lt`;
+      sources.push(`https://player.twitch.tv/?channel=${value}&parent=valo5v5.multiwatch.lt`);
+      ciframe.src = `https://www.twitch.tv/embed/${value}/chat?darkpopout&parent=valo5v5.multiwatch.lt`;
 
       const li = document.createElement('li');
       const a = document.createElement('a');
@@ -159,8 +159,8 @@ function getStreamSources() {
       }
 
       if (id && name) {
-        ciframe.src = `https://www.youtube.com/live_chat?is_popout=0&v=${id}&embed_domain=cs5v5.multiwatch.lt`;
-        sources.push(`https://www.youtube.com/embed/${id}?autoplay=1&origin=cs5v5.multiwatch.lt`);
+        ciframe.src = `https://www.youtube.com/live_chat?is_popout=0&v=${id}&embed_domain=valo5v5.multiwatch.lt`;
+        sources.push(`https://www.youtube.com/embed/${id}?autoplay=1&origin=valo5v5.multiwatch.lt`);
 
         const li = document.createElement('li');
         const a = document.createElement('a');
@@ -193,3 +193,4 @@ function getStreamSources() {
 const streamSources = getStreamSources();
 
 renderLayout(streamSources);
+
