@@ -128,8 +128,8 @@ function getStreamSources() {
     }
 
     if (key === "tw") {
-      sources.push(`https://player.twitch.tv/?channel=${value}&parent=dyinglight.multiwatch.lt`);
-      ciframe.src = `http://127.0.0.1:5500/chat/index.html?BROADCASTER_ID=37558817&CHANNEL=${value}`;
+      sources.push(`https://player.twitch.tv/?channel=${value}&parent=cs5v5.multiwatch.lt`);
+      ciframe.src = `https://www.twitch.tv/embed/${value}/chat?darkpopout&parent=cs5v5.multiwatch.lt`;
 
       const li = document.createElement('li');
       const a = document.createElement('a');
@@ -159,8 +159,8 @@ function getStreamSources() {
       }
 
       if (id && name) {
-        ciframe.src = `https://www.youtube.com/live_chat?is_popout=0&v=${id}&embed_domain=localhost`;
-        sources.push(`https://www.youtube.com/embed/${id}?autoplay=1&origin=dyinglight.multiwatch.lt`);
+        ciframe.src = `https://www.youtube.com/live_chat?is_popout=0&v=${id}&embed_domain=cs5v5.multiwatch.lt`;
+        sources.push(`https://www.youtube.com/embed/${id}?autoplay=1&origin=cs5v5.multiwatch.lt`);
 
         const li = document.createElement('li');
         const a = document.createElement('a');
@@ -188,5 +188,8 @@ function getStreamSources() {
 
 
 
+
+
 const streamSources = getStreamSources();
+
 renderLayout(streamSources);
